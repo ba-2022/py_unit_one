@@ -3,6 +3,7 @@ import turtle
 
 turtle.speed(100)
 
+#this makes an octagon
 def makeAOctagon(color):
     turtle.fillcolor(color)
     turtle.begin_fill()
@@ -17,13 +18,17 @@ makeAOctagon("red")
 
 
 
-
+#this makes sure the pen isnt drawing
 turtle.penup()
+#this moves the pen to a location
 turtle.goto(-50,210)
+#this lets the pen start drawing
 turtle.pendown()
 
+#makes the pen fill the shape
 turtle.begin_fill()
 makeAOctagon("blue")
+#stops the filling of the shape
 turtle.end_fill()
 
 turtle.penup()
@@ -43,5 +48,5 @@ turtle.begin_fill()
 makeAOctagon("green")
 turtle.end_fill()
 
-
+#lets the results stay until you click exit
 turtle.exitonclick()
