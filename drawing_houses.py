@@ -1,10 +1,14 @@
 
 import turtle
 
+#this controls the speed of the turtle
 turtle.speed(100)
+
+#makes the square house
 def makeASquare(side_length, Rcolor):
     turtle.color(Rcolor)
     turtle.begin_fill()
+    #repeats the movement 4 times to create square
     for x in range(4):
         turtle.forward(side_length)
         turtle.left(90)
@@ -19,9 +23,12 @@ turtle.forward(100)
 turtle.pendown()
 
 turtle.goto(20,80)
+
+#makes the roof
 def drawATriangle(side_length, Tcolor):
     turtle.color(Tcolor)
     turtle.begin_fill()
+    #repeats the movement 2 times to create triangle
     for x in range(2):
         turtle.forward(side_length)
         turtle.left(120)
@@ -30,9 +37,7 @@ def drawATriangle(side_length, Tcolor):
 
 drawATriangle(100, "red")
 
-
-
-
+#moves the turtle to a certain point to align with the rest of the house
 turtle.penup()
 turtle.goto(20,-20)
 turtle.forward(100)
@@ -76,9 +81,7 @@ turtle.pendown
 turtle.goto(-300,30)
 drawATriangle(50, "orange")
 
-
-
-
+#makes the results stay unitl you click exit
 turtle.exitonclick()
 
 
