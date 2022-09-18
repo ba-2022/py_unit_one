@@ -13,12 +13,9 @@ def makeAOctagon(color):
         turtle.forward(30)
     turtle.end_fill()
 
-
 makeAOctagon("red")
 
-
-
-#this makes sure the pen isnt drawing
+#this makes sure the pen isn't drawing
 turtle.penup()
 #this moves the pen to a location
 turtle.goto(-50,210)
@@ -38,7 +35,6 @@ turtle.pendown()
 turtle.begin_fill()
 makeAOctagon("pink")
 turtle.end_fill()
-
 
 turtle.penup()
 turtle.goto(-140,-150)
